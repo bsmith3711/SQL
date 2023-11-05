@@ -23,6 +23,7 @@ The SQL queries developed as part of this analysis serve the following purposes:
 Joining various datasets to create a holistic view of the order process.
 Calculating the total order value and average review scores to gauge customer satisfaction and product performance.
 Analyzing geographic sales distribution to understand market penetration and potential areas for expansion.
+
 Queries
 Join Operations: Created SQL JOIN operations to link related data from different datasets, enabling a unified view of the business data.
 
@@ -33,11 +34,13 @@ Example of calculated fields: Total sales per product, average rating, total sal
 Geographic Distribution: Constructed queries to analyze the sales distribution across different geographic locations.
 
 Example output: Number of orders per state, sales value per region.
+
 How to Run the SQL Scripts
 Download the datasets from the Kaggle link provided above.
 Set up your SQL environment (e.g., PostgreSQL, MySQL).
 Import the datasets into your database management system.
 Run the provided SQL scripts in your SQL environment to replicate the analysis.
+
 Results
 The results of the SQL queries are presented in this repository as CSV files and screenshots to showcase the expected outputs of each analysis step.
 
