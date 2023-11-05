@@ -6,14 +6,14 @@ The goal of this project is to extract meaningful insights regarding product per
 Datasets
 The analysis is based on multiple datasets that are part of the larger "Brazilian E-Commerce Public Dataset by Olist" available on Kaggle (https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce/data). These datasets include:
 
--OLIST_CUSTOMERS_DATASET
--OLIST_GEOLOCATION_DATASET
--OLIST_ORDER_ITEMS_DATASET
--OLIST_ORDER_PAYMENTS_DATASET
--OLIST_ORDER_REVIEWS_DATASET
--OLIST_PRODUCTS_DATASET
--OLIST_SELLERS_DATASET
--PRODUCT_CATEGORY_NAME_TRANSLATION
+- OLIST_CUSTOMERS_DATASET
+- OLIST_GEOLOCATION_DATASET
+- OLIST_ORDER_ITEMS_DATASET
+- OLIST_ORDER_PAYMENTS_DATASET
+- OLIST_ORDER_REVIEWS_DATASET
+- OLIST_PRODUCTS_DATASET
+- OLIST_SELLERS_DATASET
+- PRODUCT_CATEGORY_NAME_TRANSLATION
 
 Each dataset comprises various fields that detail the transactions, products, and user interactions on the Olist platform.
 
