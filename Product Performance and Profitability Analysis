@@ -1,0 +1,17 @@
+SELECT 
+    pc.product_category_name_english,
+    COUNT(DISTINCT oi.order_id) AS total_orders,
+    SUM(oi.price) AS total_revenue,
+    AVG(ore.review_score) AS average_review_score -- Changed alias to 'ore'
+FROM 
+    OLIST_ORDER_ITEMS_DATASET oi
+INNER JOIN 
+    OLIST_PRODUCTS_DATASET p ON oi.product_id = p.product_id
+INNER JOIN 
+    PRODUCT_CATEGORY_NAME_TRANSLATION pc ON p.product_category_name = pc.product_category_name
+INNER JOIN 
+    OLIST_ORDER_REVIEWS_DATASET ore ON oi.order_id = ore.order_id -- Changed alias to 'ore'
+GROUP BY 
+    pc.product_category_name_english
+ORDER BY 
+    total_revenue DESC;
