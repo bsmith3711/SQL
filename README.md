@@ -1,5 +1,5 @@
 # SQL-Analysis-Ecommerce
-This repository contains SQL queries and analysis scripts for a comprehensive business analysis of Olist, a Brazilian e-commerce platform.
+This repository contains SQL queries and analysis scripts I creted for a comprehensive business analysis of Olist, a Brazilian e-commerce platform.
 
 The goal of this project is to extract meaningful insights regarding product performance, profitability, sales distribution, and customer satisfaction that can aid in making informed business decisions.
 
