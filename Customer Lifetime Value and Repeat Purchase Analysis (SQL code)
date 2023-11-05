@@ -1,0 +1,12 @@
+SELECT
+  c.customer_unique_id,
+  COUNT(distinct o.order_id) AS total_orders,
+  SUM(oi.price) AS total_spent
+FROM 
+  OLIST_CUSTOMERS_DATASET c
+JOIN 
+  OLIST_ORDERS_DATASET o ON c.customer_id = o.customer_id
+JOIN 
+  OLIST_ORDER_ITEMS_DATASET oi ON o.order_id = oi.order_id
+GROUP BY 
+  c.customer_unique_id;
