@@ -1,0 +1,15 @@
+SELECT 
+    c.customer_state,
+    COUNT(DISTINCT o.order_id) AS total_orders,
+    COUNT(DISTINCT c.customer_id) AS total_customers,
+    SUM(i.price) AS total_sales
+FROM 
+    OLIST_CUSTOMERS_DATASET c
+JOIN 
+    OLIST_ORDERS_DATASET o ON c.customer_id = o.customer_id
+JOIN 
+    OLIST_ORDER_ITEMS_DATASET i ON o.order_id = i.order_id
+GROUP BY 
+    c.customer_state
+ORDER BY 
+    total_sales DESC;
